@@ -18,5 +18,12 @@ public class TestDriver {
 		verify(vehicle, times(1)).start();
 		verify(vehicle, times(1)).stop();
 	}
+	
+	@Test
+	public void testMend(){
+		IVehicle vehicle = mock(IVehicle.class);
+		Driver driver = new Driver(vehicle);
+		assertEquals(2, driver.mend());
+	}
 
 }

@@ -12,4 +12,8 @@ public class Driver {
 		//do sth
 		vehicle.start();
 	}
+	
+	public int mend(){
+		return 1+1;
+	}
 }
